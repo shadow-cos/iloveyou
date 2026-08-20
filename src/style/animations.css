@@ -1,0 +1,138 @@
+/* ============================================================
+   OUR STORY — REUSABLE ANIMATION SYSTEM
+   Shared keyframes + ambient motion used across every chapter,
+   not just the landing page.
+   ============================================================ */
+
+/* ---------------------------------------------------------
+   Loading screen
+   --------------------------------------------------------- */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  background: var(--ink-950);
+  transition: opacity 1s var(--ease-cinema), visibility 1s var(--ease-cinema);
+}
+
+.loading-screen.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-ember {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-300) 0%, var(--gold-500) 45%, transparent 75%);
+  box-shadow: 0 0 24px 8px rgba(203, 163, 92, 0.35);
+  animation: ember-breathe 2.2s ease-in-out infinite;
+}
+
+.loading-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ivory-500);
+}
+
+.loading-dots span {
+  animation: loading-dot-fade 1.4s infinite;
+  opacity: 0;
+}
+.loading-dots span:nth-child(1) { animation-delay: 0s; }
+.loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes loading-dot-fade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes ember-breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 18px 6px rgba(203, 163, 92, 0.28);
+  }
+  50% {
+    transform: scale(1.4);
+    box-shadow: 0 0 32px 12px rgba(232, 205, 143, 0.45);
+  }
+}
+
+/* ---------------------------------------------------------
+   Ambient ember field — the site's signature atmosphere.
+   Small warm motes drifting upward, like candlelight or
+   fireflies. Deliberately restrained: sparse, slow, soft.
+   --------------------------------------------------------- */
+.ember-field {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ember {
+  position: absolute;
+  bottom: -5%;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-300), var(--gold-500) 60%, transparent 75%);
+  opacity: 0;
+  filter: blur(0.3px);
+  animation-name: ember-rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ember-rise {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 0;
+  }
+  8% {
+    opacity: var(--ember-opacity, 0.55);
+  }
+  85% {
+    opacity: var(--ember-opacity, 0.55);
+  }
+  100% {
+    transform: translate(var(--ember-drift, 20px), -108vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   Generic scroll-reveal primitives.
+   Applied via JS (scrollAnimations.js) using GSAP for the
+   orchestrated cases; these classes cover the CSS-only /
+   reduced-motion fallback path.
+   --------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--dur-med) var(--ease-cinema), transform var(--dur-med) var(--ease-cinema);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .ember-field {
+    display: none;
+  }
+}

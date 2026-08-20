@@ -1,0 +1,186 @@
+/* ============================================================
+   CHAPTER THREE — "THE LITTLE THINGS ❤️"
+   Signature move: cards that drift like they're weightless,
+   each one a small kept thing rather than a UI tile. Clicking
+   turns one over, the way you'd turn over a keepsake in your
+   hand to read the back.
+   ============================================================ */
+
+.little-things-chapter {
+  position: relative;
+  z-index: 2;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-5);
+}
+
+.little-things-chapter__header {
+  text-align: center;
+  max-width: var(--content-max);
+  margin: 0 auto var(--space-6);
+}
+
+.little-things-chapter__eyebrow {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-500);
+  margin-bottom: var(--space-2);
+}
+
+.little-things-chapter__title {
+  font-size: var(--fs-hero);
+  color: var(--ivory-100);
+  margin-bottom: var(--space-3);
+}
+
+.little-things-chapter__intro {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ivory-500);
+  font-size: var(--fs-md);
+}
+
+/* ---- Card field ---- */
+.memory-card-field {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-4) var(--space-3);
+  padding: var(--space-3) 0;
+}
+
+.memory-card-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---- Gentle infinite float (applied to .memory-card only, so
+   it never fights the one-time scroll-reveal on the wrapper) ---- */
+@keyframes card-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(var(--card-tilt, 1deg)); }
+}
+
+.memory-card {
+  position: relative;
+  width: 100%;
+  max-width: 170px;
+  aspect-ratio: 3 / 4;
+  background: none;
+  border: none;
+  padding: 0;
+  perspective: 1000px;
+  font-family: inherit;
+}
+
+.memory-card:focus-visible .memory-card__inner {
+  outline: 2px solid var(--gold-300);
+  outline-offset: 4px;
+  border-radius: 16px;
+}
+
+.memory-card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s var(--ease-cinema);
+  transform-style: preserve-3d;
+}
+
+.memory-card.is-flipped .memory-card__inner {
+  transform: rotateY(180deg);
+}
+
+.memory-card__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border-radius: 16px;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.memory-card__face--front {
+  background: linear-gradient(160deg, var(--ink-800), var(--ink-900));
+  border: 1px solid var(--surface-glass-border);
+  box-shadow: 0 16px 32px -18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease-soft), border-color var(--dur-fast) var(--ease-soft);
+}
+
+.memory-card:not(.is-flipped):hover .memory-card__face--front {
+  transform: translateY(-2px);
+  border-color: rgba(203, 163, 92, 0.35);
+}
+
+.memory-card__emoji {
+  font-size: 1.9rem;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+.memory-card__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  color: var(--ivory-100);
+  line-height: 1.3;
+}
+
+.memory-card__hint {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ivory-700);
+  margin-top: var(--space-1);
+}
+
+.memory-card__face--back {
+  background: linear-gradient(160deg, var(--gold-700), var(--gold-500));
+  color: var(--ink-950);
+  transform: rotateY(180deg);
+  box-shadow: 0 16px 32px -18px rgba(0, 0, 0, 0.6);
+}
+
+.memory-card__reveal-text {
+  font-size: var(--fs-sm);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.memory-card__reveal-text--placeholder {
+  font-style: italic;
+  font-weight: 400;
+  opacity: 0.85;
+  font-size: var(--fs-xs);
+}
+
+/* ---- Closing line ---- */
+.little-things-chapter__closing {
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--ivory-100);
+  max-width: 46ch;
+  margin: var(--space-6) auto 0;
+}
+
+@media (max-width: 640px) {
+  .memory-card-field {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--space-3) var(--space-2);
+  }
+  .memory-card {
+    max-width: 140px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .memory-card {
+    animation: none !important;
+  }
+}

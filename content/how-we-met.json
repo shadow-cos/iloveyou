@@ -1,0 +1,72 @@
+{
+  "_instructions": "Edit the text below freely — this is exactly what appears on the site. Anything in [BRACKETS] is a placeholder for a detail that wasn't in what you gave me; replace it with the real thing (or delete the sentence if you'd rather leave it out). 'image' points to the photo file in /assets/photos/how-we-met/ — already set to the one you uploaded.",
+
+  "eyebrow": "Chapter One",
+  "title": "The Beginning",
+  "titleEmoji": "🌸",
+
+  "image": {
+    "src": "/photos/how-we-met/first-time-i-saw-you.jpg",
+    "alt": "The two of us together",
+    "caption": "[ADD A SHORT CAPTION FOR THIS PHOTO, OR DELETE THIS LINE]"
+  },
+
+  "beats": [
+    {
+      "id": "first-sight",
+      "label": "The First Time I Saw You",
+      "paragraphs": [
+        "I still remember that day. I was roaming around Triveni Colony, completely unaware that an ordinary moment was about to become one of the most beautiful memories of my life.",
+        "And then… I saw you. It wasn't a conversation. It wasn't a proper introduction. You didn't even know what was going on inside my brain. I just saw you.",
+        "You know those scenes in movies where the hero sees the girl for the first time and suddenly everything around him feels a little slower — that was me. For a moment, it felt like the world had become quieter."
+      ]
+    },
+    {
+      "id": "what-i-remember",
+      "label": "What I Remember About That Moment",
+      "paragraphs": [
+        "I don't know what it was about you. Maybe it was your face. Maybe it was your smile. Maybe it was simply the way you existed in that moment. But something inside me just stopped and said — \u201cHer.\u201d",
+        "It happened on [WHEN THIS WAS — E.G. A SEASON, MONTH, OR YEAR, IF YOU REMEMBER]. [ADD ANYTHING ELSE MEMORABLE ABOUT THAT DAY, IF YOU REMEMBER IT — WHAT YOU WERE DOING, WHAT SHE WAS DOING, ANYTHING AROUND YOU.]",
+        "I didn't know your story yet. I didn't know your favourite things, your little habits, how cute you could be, or how much you could annoy me 😂. I didn't know how many memories we'd eventually create together. At that moment, I knew nothing about you — except that I couldn't stop looking at you."
+      ]
+    },
+    {
+      "id": "first-impression",
+      "label": "My First Impression",
+      "paragraphs": [
+        "Before I knew your heart, before I knew your nature, before I knew the little things that make you you — I knew one thing. You were incredibly beautiful. But there was something about you that made you stand out from everyone else.",
+        "There was something so effortless about you. You weren't trying to impress anyone, you weren't trying to look beautiful — you were simply being yourself. And somehow, that made you even more beautiful.",
+        "I didn't know you yet, but just seeing you made me curious about the person behind that face. I wanted to know what kind of person could make me feel this way without even saying a single word to me."
+      ]
+    },
+    {
+      "id": "what-happened-after",
+      "label": "What Happened After That",
+      "paragraphs": [
+        "After that first glimpse of you, I had no idea what was going to happen. I didn't know if you'd even noticed me, or if we'd ever talk. Honestly, I wasn't expecting anything — I just had this little curiosity about you.",
+        "So I did what any hopelessly curious guy would do. I asked my friends about you. \u201cWho is she?\u201d \u201cWhat's her name?\u201d \u201cDo you know anything about her?\u201d I somehow got your information, found you, and finally — sent you a friend request.",
+        "That's it. At least, that's what I thought. Just a friend request. I had absolutely no idea that this tiny little click was about to change my life."
+      ]
+    },
+    {
+      "id": "when-we-talked",
+      "label": "When We Started Talking",
+      "paragraphs": [
+        "Our first conversation was nothing extraordinary. No dramatic confession, no romantic movie dialogue. It was just — \u201cHi.\u201d And then, \u201cHello.\u201d ❤️ That's it. Just two simple words. But somehow, those two little words became the beginning of everything that came after.",
+        "You asked me something like, \u201cHow is your tooth broken?\u201d Just a simple question, a normal conversation. But behind that simple hi and hello was a feeling I couldn't explain — I was talking to the same girl I'd noticed from a distance, and suddenly, she was talking to me.",
+        "We weren't talking about love. We weren't saying anything particularly special. Just little things — simple questions, normal replies. But sometimes the most beautiful stories begin with the most ordinary conversations."
+      ]
+    },
+    {
+      "id": "everything-changed",
+      "label": "How Everything Slowly Started Changing",
+      "paragraphs": [
+        "Those random conversations slowly started becoming something I looked forward to. I was still trying to understand you, trying to figure out what was happening between us — everything was happening so naturally, yet it felt different.",
+        "And then, only two days later, you proposed to me. Two days. Just two days. I wasn't ready for that. I wasn't expecting it. For a moment, it felt like life had suddenly skipped a few chapters without telling me.",
+        "The same girl I had just seen in Triveni colony … the same girl whose information I'd asked my friends for… the same girl I had nervously sent a friend request to… was suddenly asking me to be hers. That day, you didn't just propose to me. You gave me the beginning of an \u201cus.\u201d ❤️"
+      ]
+    }
+  ],
+
+  "closingLine": "And that was only the beginning…"
+}

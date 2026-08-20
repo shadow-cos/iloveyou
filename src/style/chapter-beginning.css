@@ -1,0 +1,165 @@
+/* ============================================================
+   CHAPTER ONE — "THE BEGINNING 🌸"
+   A slow, alternating scroll narrative. The photo is treated
+   like a kept keepsake — softly framed and faintly tilted,
+   not a generic full-bleed hero — echoing the site's "candlelight
+   scrapbook" identity rather than a stock romantic banner.
+   ============================================================ */
+
+.beginning-chapter {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-5);
+}
+
+/* ---- Header ---- */
+.beginning-chapter__header {
+  text-align: center;
+  max-width: var(--content-max);
+  margin: 0 auto var(--space-6);
+}
+
+.beginning-chapter__eyebrow {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-500);
+  margin-bottom: var(--space-2);
+}
+
+.beginning-chapter__title {
+  font-size: var(--fs-hero);
+  color: var(--ivory-100);
+  font-weight: 500;
+}
+
+.beginning-chapter__title-emoji {
+  display: inline-block;
+}
+
+/* ---- Keepsake photo ---- */
+.beginning-chapter__photo {
+  max-width: 420px;
+  margin: 0 auto var(--space-6);
+  padding: var(--space-2) var(--space-2) var(--space-3);
+  background: linear-gradient(160deg, var(--ink-800), var(--ink-900));
+  border: 1px solid var(--surface-glass-border);
+  border-radius: 4px;
+  box-shadow:
+    0 24px 48px -20px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(203, 163, 92, 0.05);
+  transform: rotate(-1.6deg);
+  transition: transform var(--dur-med) var(--ease-soft);
+}
+
+.beginning-chapter__photo:hover {
+  transform: rotate(-0.4deg) scale(1.015);
+}
+
+.beginning-chapter__photo img {
+  width: 100%;
+  border-radius: 2px;
+  filter: saturate(0.96) contrast(1.03);
+}
+
+.beginning-chapter__photo figcaption {
+  margin-top: var(--space-2);
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--ivory-500);
+}
+
+/* ---- Story beats ---- */
+.beginning-chapter__beats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.beat {
+  max-width: 560px;
+}
+
+.beat--left {
+  margin-right: auto;
+  text-align: left;
+}
+
+.beat--right {
+  margin-left: auto;
+  text-align: left;
+}
+
+.beat__label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--gold-300);
+  margin-bottom: var(--space-2);
+  position: relative;
+  padding-left: var(--space-3);
+}
+
+.beat__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 1px;
+  background: var(--gold-500);
+}
+
+.beat__text p {
+  font-size: var(--fs-md);
+  color: var(--ivory-300);
+  margin-bottom: var(--space-2);
+  max-width: 62ch;
+}
+
+.beat__text p:last-child {
+  margin-bottom: 0;
+}
+
+.beat__text strong {
+  color: var(--ivory-100);
+  font-weight: 600;
+}
+
+/* ---- Closing transition line ---- */
+.beginning-chapter__closing {
+  margin-top: var(--space-6);
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-xl);
+  color: var(--ivory-100);
+  position: relative;
+}
+
+.beginning-chapter__closing::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 48px;
+  margin: 0 auto var(--space-3);
+  background: linear-gradient(to bottom, transparent, var(--gold-500));
+}
+
+@media (max-width: 720px) {
+  .beat--left,
+  .beat--right {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .beginning-chapter__photo {
+    max-width: 300px;
+  }
+}

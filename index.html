@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Our Story</title>
+  <meta name="description" content="A private story, told slowly." />
+
+  <!-- Typography: Fraunces (display, literary/cinematic) + Manrope (body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Manrope:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/src/style/base.css" />
+  <link rel="stylesheet" href="/src/style/animations.css" />
+  <link rel="stylesheet" href="/src/style/landing.css" />
+  <link rel="stylesheet" href="/src/style/chapter-beginning.css" />
+  <link rel="stylesheet" href="/src/style/chapter-first-call.css" />
+  <link rel="stylesheet" href="/src/style/chapter-little-things.css" />
+  <link rel="stylesheet" href="/src/style/chapter-secret-world.css" />
+  <link rel="stylesheet" href="/src/style/chapter-memories.css" />
+  <link rel="stylesheet" href="/src/style/chapter-unwritten.css" />
+</head>
+<body>
+
+  <!-- Grain + vignette sit above everything, pointer-events: none -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <!-- Loading screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-ember"></div>
+    <p class="loading-label">gathering our story<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></p>
+  </div>
+
+  <!-- Site navigation (minimal, appears after landing is dismissed) -->
+  <nav id="site-nav" class="site-nav" aria-label="Chapter navigation">
+    <div class="site-nav__mark">Our&nbsp;Story</div>
+    <div class="site-nav__progress" aria-hidden="true">
+      <div class="site-nav__progress-fill" id="nav-progress-fill"></div>
+    </div>
+  </nav>
+
+  <!-- Ambient floating embers, behind content -->
+  <div id="ember-field" class="ember-field" aria-hidden="true"></div>
+
+  <main id="app">
+    <!-- Landing / opening sequence -->
+    <section id="landing" class="landing" aria-label="Opening">
+      <div class="landing__glow" id="landing-glow" aria-hidden="true"></div>
+
+      <div class="landing__lines" id="landing-lines">
+        <p class="landing__line" data-line="1">Every story has a beginning&hellip;</p>
+        <p class="landing__line" data-line="2">Ours started with a simple conversation.</p>
+        <p class="landing__line" data-line="3">And somehow&hellip; that conversation became<br class="landing__br" /> something I never expected.</p>
+        <p class="landing__line landing__line--signature" data-line="4">
+          <span id="landing-name">Shrawani</span>, this is our story. <span class="landing__heart">&#10084;</span>
+        </p>
+      </div>
+
+      <button id="start-story-btn" class="start-btn" type="button">
+        <span class="start-btn__label">Start Our Story</span>
+        <span class="start-btn__ring" aria-hidden="true"></span>
+      </button>
+
+      <p class="landing__hint" id="landing-hint" aria-hidden="true">scroll or tap to begin</p>
+    </section>
+
+    <!-- Chapters mount here -->
+    <div id="chapters-root">
+      <div id="chapter-beginning-root"></div>
+      <div id="chapter-first-call-root"></div>
+      <div id="chapter-little-things-root"></div>
+      <div id="chapter-secret-world-root"></div>
+      <div id="chapter-memory-wall-root"></div>
+      <div id="chapter-unwritten-root"></div>
+
+      <section class="chapters-placeholder" data-reveal="fade-up">
+        <p class="chapters-placeholder__eyebrow">Chapter Seven</p>
+        <h2 class="chapters-placeholder__title">The story continues</h2>
+        <p class="chapters-placeholder__body">
+          Whatever comes next — built as that content is ready.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "_instructions": "Add a future 'Chapter 4', 'Chapter 5', etc. by copying an object in the 'chapters' array — the page will pick it up automatically. 'finalChapter' only appears once every entry in 'chapters' has been opened.",
+
+  "eyebrow": "Chapter Six",
+  "title": "The Unwritten Chapters",
+  "titleEmoji": "🔮",
+  "subtitle": "We've already written so many beautiful pages together… but our story isn't finished yet.",
+  "handwrittenLine": "Still waiting to be written…",
+
+  "chapters": [
+    {
+      "id": "world-is-ours",
+      "icon": "🌍",
+      "title": "Chapter After Marriage — The World Is Ours",
+      "dream": "I want to travel the whole world with you.\n\nNot just visit places… I want to experience them with you.\n\nI want to hold your hand while we walk through streets we've never seen before.\n\nI want us to get lost in new cities, discover little cafés, take too many photographs, laugh at stupid things, and look at each other in places we've only ever seen in pictures.\n\nFrom one country to another… one adventure to another… always holding your hand. ❤️",
+      "closingLine": "Wherever the world takes us, I just hope I'm walking beside you. 🌍❤️"
+    },
+    {
+      "id": "our-little-home",
+      "icon": "🏡",
+      "title": "Chapter After Marriage — Our Little Home",
+      "dream": "One day, I hope we build a little home together.\n\nNot just a house with walls and furniture… but a place that feels like us.\n\nA place filled with our laughter. Our photographs on the walls. Our little arguments. Late-night conversations. Lazy mornings. Your things everywhere. 😂❤️\n\nA kitchen where we make memories together. A bedroom where we talk about our days before falling asleep.\n\nA home where even the most ordinary day feels special… simply because you're there.",
+      "closingLine": "I don't dream of a perfect house. I dream of a home that feels perfect because we're in it. 🏡❤️"
+    },
+    {
+      "id": "little-family",
+      "icon": "👨‍👩‍👧",
+      "title": "Chapter After Marriage — A Little Girl Like You",
+      "dream": "And maybe, someday… we'll have a cute little daughter who looks a little like you. ❤️\n\nI imagine looking at her and seeing little pieces of you in her. Your smile. Your expressions. Your little habits. Maybe even your stubbornness. 😂\n\nAnd I can already imagine myself looking at both of you and thinking… \u201cHow did I get this lucky?\u201d\n\nI hope we get to experience those little family moments together someday. Watching her grow. Teaching her things. Protecting her. Laughing with her. And watching you become the amazing mother I already know you could be.",
+      "closingLine": "Maybe someday, another little smile will make our little world even bigger. ❤️"
+    }
+  ],
+
+  "finalChapter": {
+    "id": "whatever-comes-next",
+    "title": "Chapter ??? — Whatever Comes Next",
+    "blankNote": "This page is intentionally blank.",
+    "dream": "Because I don't know everything the future has planned for us.\n\nAnd honestly… I don't need to.\n\nI just hope that whatever chapters come next, we get to write them together.\n\nMaybe there will be places we haven't imagined yet. Dreams we haven't discovered yet. Adventures we haven't planned yet. And memories we haven't even dreamed of making.\n\nI don't know exactly what our future will look like. But I know I'd love to find out with you. ❤️",
+    "toBeContinued": "To be continued…"
+  },
+
+  "closing": {
+    "line1": "The past is our story.",
+    "line2": "The future is our blank page.",
+    "line3": "Let's see what we write next. ❤️"
+  }
+}

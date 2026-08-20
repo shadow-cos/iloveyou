@@ -1,0 +1,60 @@
+{
+  "_instructions": "Edit freely. Each card below is one of the small-moment categories you listed. 'reveal' is the real memory or message that shows when the card is clicked — right now every one is a placeholder because you gave me the categories but not the actual memories/messages yet. Replace the placeholder text with something real (a specific message she sent, a specific joke, what a late-night call was usually like, etc.) — even a sentence or two is enough. Leave 'reveal' as-is on any card you want to skip for now; the site will still show a gentle placeholder instead of breaking. Add or remove cards from this array freely — the layout adapts automatically.",
+
+  "eyebrow": "Chapter Three",
+  "title": "The Little Things",
+  "titleEmoji": "❤️",
+  "intro": "Not every part of a relationship is a big moment. Most of it is smaller than that — tap a card.",
+  "closingLine": "None of these were big moments on their own. But there were hundreds of them. And somehow, that's what built us.",
+
+  "cards": [
+    {
+      "id": "good-morning",
+      "emoji": "☀️",
+      "title": "Good morning messages",
+      "reveal": "[ADD A REAL GOOD MORNING MESSAGE OR MEMORY — e.g. what she usually texted, or one specific morning you remember]"
+    },
+    {
+      "id": "late-night-calls",
+      "emoji": "🌙",
+      "title": "Late-night calls",
+      "reveal": "[ADD A REAL MEMORY OF A LATE-NIGHT CALL — what you usually talked about, or one you remember clearly]"
+    },
+    {
+      "id": "random-jokes",
+      "emoji": "😂",
+      "title": "Random jokes",
+      "reveal": "[ADD A REAL JOKE OR RUNNING BIT BETWEEN YOU TWO]"
+    },
+    {
+      "id": "checking-on-each-other",
+      "emoji": "🤍",
+      "title": "Checking on each other",
+      "reveal": "[ADD A REAL MEMORY OF ONE OF YOU CHECKING IN ON THE OTHER]"
+    },
+    {
+      "id": "voice-calls",
+      "emoji": "📞",
+      "title": "Voice calls",
+      "reveal": "[ADD A REAL MEMORY ABOUT YOUR VOICE CALLS — how often, what they were usually like]"
+    },
+    {
+      "id": "video-calls",
+      "emoji": "🎥",
+      "title": "Video calls",
+      "reveal": "[ADD A REAL MEMORY ABOUT YOUR VIDEO CALLS]"
+    },
+    {
+      "id": "roasting-each-other",
+      "emoji": "🔥",
+      "title": "Roasting each other",
+      "reveal": "[ADD A REAL EXAMPLE OF HOW YOU TWO ROAST EACH OTHER]"
+    },
+    {
+      "id": "good-night",
+      "emoji": "🌌",
+      "title": "Good night messages",
+      "reveal": "[ADD A REAL GOOD NIGHT MESSAGE OR MEMORY]"
+    }
+  ]
+}

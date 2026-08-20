@@ -1,0 +1,317 @@
+/* ============================================================
+   CHAPTER TWO — "THE CONVERSATIONS THAT CHANGED EVERYTHING 💬"
+   The signature moment here is time itself: a first call that
+   quietly stretched from one hour into five. The time-progression
+   strip and the oversized "FIVE HOURS" beat are the one bold risk
+   in this chapter; everything else stays quiet around it.
+   ============================================================ */
+
+.first-call-chapter {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-5);
+}
+
+.first-call-chapter__header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.first-call-chapter__eyebrow {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-500);
+  margin-bottom: var(--space-2);
+}
+
+.first-call-chapter__title {
+  font-size: var(--fs-hero);
+  color: var(--ivory-100);
+}
+
+.first-call-chapter__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* ---- Intro lines ---- */
+.first-call__intro {
+  text-align: center;
+}
+
+.first-call__intro-line {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--ivory-300);
+  margin-bottom: var(--space-2);
+}
+
+.first-call__intro-line--emphasis {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-xl);
+  color: var(--gold-300);
+  margin-bottom: 0;
+}
+
+/* ---- Generic story blocks ---- */
+.story-block p {
+  font-size: var(--fs-md);
+  color: var(--ivory-300);
+  margin-bottom: var(--space-2);
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.story-block p:last-child {
+  margin-bottom: 0;
+}
+
+.story-block--light p {
+  color: var(--ivory-500);
+  font-size: var(--fs-sm);
+}
+
+/* ---- The "hmm" chat bubble ---- */
+.hmm-moment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.chat-bubble {
+  position: relative;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 18px 18px 4px 18px;
+  background: linear-gradient(160deg, var(--gold-700), var(--gold-500));
+  color: var(--ink-950);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  box-shadow: 0 10px 30px -12px rgba(203, 163, 92, 0.45);
+  animation: bubble-pop var(--dur-med) var(--ease-cinema) both;
+}
+
+.chat-bubble p {
+  margin: 0;
+}
+
+@keyframes bubble-pop {
+  from { opacity: 0; transform: translateY(10px) scale(0.92); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hmm-moment__note {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--ivory-500);
+  align-self: center;
+  text-align: center;
+}
+
+/* ---- Time progression ---- */
+.time-progression {
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.time-progression__track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+
+.time-progression__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  position: relative;
+}
+
+.time-progression__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: calc(100% + 6px);
+  width: clamp(16px, 4vw, 36px);
+  height: 1px;
+  background: linear-gradient(to right, var(--gold-700), transparent);
+}
+
+.time-progression__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ink-700);
+  border: 1px solid var(--gold-700);
+}
+
+.time-progression__step--last .time-progression__dot {
+  width: 14px;
+  height: 14px;
+  background: var(--gold-300);
+  box-shadow: 0 0 16px 4px rgba(232, 205, 143, 0.5);
+}
+
+.time-progression__label {
+  font-size: var(--fs-xs);
+  color: var(--ivory-500);
+  letter-spacing: 0.04em;
+}
+
+.time-progression__step--last .time-progression__label {
+  color: var(--gold-300);
+  font-weight: 600;
+}
+
+.time-progression__highlight {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 8vw, 4.2rem);
+  letter-spacing: 0.03em;
+  background: linear-gradient(135deg, var(--gold-300), var(--rose-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: var(--space-2) 0;
+}
+
+.time-progression__after {
+  font-size: var(--fs-md);
+  color: var(--ivory-300);
+  max-width: 46ch;
+  margin: 0 auto;
+}
+
+/* ---- Screenshots ---- */
+.screenshots-row {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.screenshot-card {
+  width: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--ink-800);
+  border: 1px solid var(--surface-glass-border);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.55);
+}
+
+.screenshot-card img {
+  width: 100%;
+  display: block;
+}
+
+.screenshot-card__placeholder {
+  aspect-ratio: 9 / 16;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  text-align: center;
+  background:
+    repeating-linear-gradient(135deg, rgba(244, 239, 230, 0.02) 0 10px, transparent 10px 20px);
+}
+
+.screenshot-card__icon {
+  font-size: 1.6rem;
+  opacity: 0.6;
+}
+
+.screenshot-card__placeholder-text {
+  font-size: var(--fs-xs);
+  color: var(--ivory-700);
+  line-height: 1.5;
+}
+
+.screenshot-card figcaption {
+  padding: var(--space-2) var(--space-2);
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  color: var(--ivory-500);
+  border-top: 1px solid var(--surface-glass-border);
+}
+
+/* ---- Standalone emphasis lines ---- */
+.first-call-chapter__standalone {
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--ivory-100);
+  max-width: 44ch;
+  margin: 0 auto;
+}
+
+.first-call-chapter__realization {
+  text-align: center;
+  font-size: var(--fs-lg);
+  color: var(--gold-300);
+  max-width: 44ch;
+  margin: 0 auto;
+  position: relative;
+  padding: var(--space-3) 0;
+}
+
+.first-call-chapter__realization::before,
+.first-call-chapter__realization::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  margin: 0 auto var(--space-2);
+  background: var(--gold-700);
+}
+
+/* ---- Closing ---- */
+.first-call__closing {
+  text-align: center;
+  margin-top: var(--space-3);
+}
+
+.first-call__closing-line {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-md);
+  color: var(--ivory-500);
+  margin-bottom: var(--space-2);
+}
+
+.first-call__closing-line--final {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--fs-xl);
+  color: var(--ivory-100);
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 560px) {
+  .hmm-moment {
+    max-width: 90%;
+  }
+  .screenshot-card {
+    width: 44vw;
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "_instructions": "Edit the values below — never edit files in /src. 'name' is her name as it should appear in the final line. 'lineHoldMs' is optional: how long (in milliseconds) each of the first 3 lines stays on screen before the next one appears.",
+  "name": "Shrawani",
+  "lineHoldMs": [2600, 3000, 3400]
+}

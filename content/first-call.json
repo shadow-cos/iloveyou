@@ -1,0 +1,66 @@
+{
+  "_instructions": "Edit freely — this is exactly what appears on the site. The two screenshots (first-chat.png, funny-chat.png) haven't arrived yet, so 'src' is null for both and the site shows a clearly-labeled placeholder instead of a broken image. Once you drop the real files into /assets/screenshots/first-call/, update the matching 'src' path below (e.g. \"/screenshots/first-call/first-chat.png\") and it'll appear automatically.",
+
+  "eyebrow": "Chapter Two",
+  "title": "The Conversations That Changed Everything",
+  "titleEmoji": "💬",
+
+  "intro": [
+    "And then came the moment I still remember so clearly…",
+    "Our first call."
+  ],
+
+  "hmmMessage": "Before I say anything, I'll just say \u201chmm\u201d first… so you'll know it's me. 😂",
+  "hmmNote": "It was such a small thing, but somehow it became our little thing.",
+
+  "callOpening": [
+    "And then we called. We started talking… and somehow, we just didn't stop.",
+    "One topic became another. One story became another. One laugh became another."
+  ],
+
+  "timeProgression": {
+    "steps": ["1 hour", "2 hours", "3 hours", "4 hours", "5 hours"],
+    "highlight": "FIVE HOURS",
+    "afterText": "Our very first call… and we talked for five hours straight."
+  },
+
+  "naturalness": [
+    "It felt so natural, like we'd already known each other for much longer. There were no awkward silences. No feeling of \u201cWhat should I say next?\u201d",
+    "We just kept talking, laughing, sharing little things, getting to know each other, and slowly getting closer."
+  ],
+
+  "screenshots": [
+    {
+      "id": "first-chat",
+      "src": null,
+      "expectedFile": "assets/screenshots/first-call/first-chat.png",
+      "label": "Our first proper conversation",
+      "alt": "Screenshot of our first proper conversation"
+    },
+    {
+      "id": "funny-chat",
+      "src": null,
+      "expectedFile": "assets/screenshots/first-call/funny-chat.png",
+      "label": "Our funny conversation",
+      "alt": "Screenshot of one of our funny conversations"
+    }
+  ],
+
+  "studyMoment": [
+    "And the sweetest part? I had my history paper the next day, and she had her geometry paper. 😂",
+    "I probably should have been studying… but there I was, lost in a five-hour conversation with her. And honestly? I didn't regret a single minute."
+  ],
+
+  "meaning": "Because that call wasn't just a phone call to me. It was the first time I truly got to hear her, know her, and feel that there was something different between us.",
+
+  "fiveMinutesLine": "When we finally ended the call, it almost felt strange that the conversation had to stop. Five hours felt like five minutes.",
+
+  "realization": "Maybe I had found someone I could talk to for hours and still want five more minutes.",
+
+  "closing": [
+    "That first call will always have a special place in my heart.",
+    "Somewhere between that first \u201chmm\u201d and those five unforgettable hours…",
+    "she started becoming more than just a girl I had met.",
+    "She started becoming my person."
+  ]
+}

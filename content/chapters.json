@@ -1,0 +1,13 @@
+{
+  "_instructions": "This file will control chapter order and visibility once chapters are built in the next phase. Nothing to edit yet — left here so the folder structure is ready.",
+  "chapters": [
+    { "id": "how-we-met", "title": "How It Started", "enabled": true },
+    { "id": "becoming-close", "title": "Becoming Close", "enabled": false },
+    { "id": "memories", "title": "Memories", "enabled": false },
+    { "id": "funny-moments", "title": "Funny Moments", "enabled": false },
+    { "id": "hard-moments", "title": "The Harder Days", "enabled": false },
+    { "id": "things-i-appreciate", "title": "Things I Appreciate", "enabled": false },
+    { "id": "unsaid-things", "title": "What I Never Said", "enabled": false },
+    { "id": "our-future", "title": "Our Future", "enabled": false }
+  ]
+}

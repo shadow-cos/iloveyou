@@ -1,0 +1,42 @@
+{
+  "_instructions": "This is the data-driven memory array — add Memory 3, 4, 5, etc. by copying one object in 'memories' and filling it in; the gallery, modal, and navigation all pick it up automatically, no code changes needed. 'date' is optional — leave it as an empty string to hide the date entirely (per your spec, it should never show an empty date field). 'image' must point to a real file in /assets/photos/memories/ — I matched your two uploaded photos to these two memories based on their content (the kiss photo → 'The Night We Finally Met', the flowers/birthday photo → the pharmacy birthday); swap the 'image' paths below if I guessed wrong.",
+
+  "eyebrow": "Chapter Five",
+  "title": "Our Favorite Memories",
+  "titleEmoji": "📸",
+  "subtitle": "Some moments become memories. Some memories become forever. ❤️",
+
+  "scatteredNotes": [
+    "Remember this?",
+    "One of my favorites ❤️",
+    "I wish I could relive this.",
+    "Us.",
+    "A moment I'll never forget."
+  ],
+
+  "memories": [
+    {
+      "id": 1,
+      "title": "The Night We Finally Met",
+      "image": "/photos/memories/the-night-we-finally-met.jpg",
+      "alt": "The two of us close together, a quiet, warm moment",
+      "date": "",
+      "story": "I still remember when I came to your house to meet you… and somehow, that night became one of those memories I'll never forget.\n\nAnd then we kissed on Dessura night. ❤️\n\nIt was such a simple moment, but for me, it meant so much. Because it wasn't just a kiss. It was one of those moments where everything we had been feeling suddenly felt real.\n\nEven now, whenever I think about that night, I can't help but smile. That night became a little piece of us that I'll always keep in my heart. ❤️",
+      "whyItMatters": "Because it was one of the first moments where our feelings weren't just words anymore. I could actually feel how close we had become."
+    },
+    {
+      "id": 2,
+      "title": "Your First Pharmacy Birthday With Me",
+      "image": "/photos/memories/first-pharmacy-birthday.jpg",
+      "alt": "The two of us together with a bouquet of flowers, celebrating",
+      "date": "1st year of Pharmacy",
+      "story": "I still remember celebrating your birthday during your 1st year of Pharmacy. 🎂❤️\n\nIt wasn't just about celebrating your birthday. For me, it was about being there with you on a day that was special to you. Seeing you happy made the whole moment special for me too.\n\nI loved being able to celebrate you, even if it was just one little chapter of our journey together. Looking back, I realize how precious these simple moments are. Your happiness somehow became my happiness too. ❤️",
+      "whyItMatters": "Because I don't just want to remember the big romantic moments. I want to remember the moments where I was simply there beside you, celebrating your life and watching you smile."
+    }
+  ],
+
+  "closing": {
+    "title": "And there are still so many more… ❤️",
+    "text": "These are only a few of the moments I've collected in my heart.\n\nThere are still so many laughs, so many calls, so many little adventures, so many stupid jokes, so many hugs, and so many moments that I never want to forget.\n\nAnd the best part? Our story isn't finished yet.\n\nThere are still so many memories waiting for us. So many more photographs waiting to be taken. 📸❤️"
+  }
+}
