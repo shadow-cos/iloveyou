@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+giimport { defineConfig } from 'vite';
 
 export default defineConfig({
   root: '.',
